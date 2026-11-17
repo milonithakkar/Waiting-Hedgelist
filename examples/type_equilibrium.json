@@ -1,0 +1,22 @@
+{
+  "trains": [
+    {"name": "A", "capacity": 4, "fare": 10},
+    {"name": "B", "capacity": 4, "fare": 10}
+  ],
+  "types": [
+    {
+      "name": "high_value",
+      "count": 4,
+      "values": {"A": 40, "B": 35},
+      "outside_option": 0,
+      "expected_ticket_costs": {"A": 2, "B": 2}
+    },
+    {
+      "name": "price_sensitive",
+      "count": 6,
+      "values": {"A": 25, "B": 20},
+      "outside_option": 0,
+      "expected_ticket_costs": {"A": 5, "B": 5}
+    }
+  ]
+}

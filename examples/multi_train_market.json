@@ -1,0 +1,45 @@
+{
+  "trains": [
+    {"name": "A", "capacity": 1, "waitlist_cap": 3, "fare": 10},
+    {"name": "B", "capacity": 1, "waitlist_cap": 2, "fare": 10}
+  ],
+  "travellers": [
+    {
+      "name": "t1",
+      "values": {"A": 20, "B": 40},
+      "outside_option": 0,
+      "booking_time": 0,
+      "trains_to_book": ["A", "B"],
+      "release_times": {"A": 1},
+      "plan_change_probability": 0
+    },
+    {
+      "name": "t2",
+      "values": {"A": 25, "B": 12},
+      "outside_option": 0,
+      "booking_time": 0,
+      "trains_to_book": ["A"],
+      "release_times": {},
+      "plan_change_probability": 0
+    },
+    {
+      "name": "t3",
+      "values": {"A": 22, "B": 15},
+      "outside_option": 0,
+      "booking_time": 1,
+      "trains_to_book": ["A"],
+      "release_times": {},
+      "plan_change_probability": 0.05
+    }
+  ],
+  "time_steps": [0, 1, 2, 3],
+  "chart_time": 2,
+  "departure_time": 3,
+  "refund_start_time": 1,
+  "refund_bonus": 2,
+  "release_friction": 0.25,
+  "waitlist_cancellation_cost": 1,
+  "confirmed_cancellation_fee": 4,
+  "post_chart_resale_probability": 0.5,
+  "empty_berth_cost": 3
+}

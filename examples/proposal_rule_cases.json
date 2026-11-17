@@ -1,0 +1,23 @@
+{
+  "hedge_cases": {
+    "illustrative_train_k": {
+      "p_k": 0.55,
+      "higher_value_train_probabilities": [0.4, 0.2],
+      "value_k": 30,
+      "fallback": 10,
+      "expected_cost_k": 4
+    }
+  },
+  "release_cases": {
+    "illustrative_refund_eligible_ticket": {
+      "epsilon": 1,
+      "q1": 0.15,
+      "q2": 0.05,
+      "confirmed_cancellation_cost": 8,
+      "waitlist_cancellation_cost": 2,
+      "fare": 20,
+      "beta": 1,
+      "refund_eligible": true
+    }
+  }
+}

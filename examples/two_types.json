@@ -1,0 +1,23 @@
+{
+  "capacity": 50,
+  "fare": 10,
+  "refund_if_unconfirmed": 2,
+  "types": [
+    {
+      "name": "high_value",
+      "count": 40,
+      "value": 30,
+      "hedge_fee": 5,
+      "missed_trip_cost": 30,
+      "hedge_probability": 0.7
+    },
+    {
+      "name": "low_value",
+      "count": 60,
+      "value": 12,
+      "hedge_fee": 5,
+      "missed_trip_cost": 12,
+      "hedge_probability": 0.25
+    }
+  ]
+}
